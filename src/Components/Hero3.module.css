@@ -1,0 +1,87 @@
+.hero {
+  background: #facc15;
+}
+
+.container {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 250px;
+  align-items: center;
+}
+
+.txt {
+  margin: 0;
+  padding: 120px 0px;
+}
+
+.txt h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0f172a;
+  max-width: 590px;
+}
+
+.txt p {
+  font-size: 24px;
+  max-width: 140px;
+  padding-top: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.txt span {
+  font-weight: 700;
+}
+
+.img {
+  max-width: 1280px;
+  content: '';
+  position: absolute;
+  right: 300px;
+}
+
+@media (max-width: 400px) { 
+  .hero {
+    background: #facc15;
+    height: 600px;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .txt {
+    margin: auto;
+    padding: 0;
+    text-align: left; /* Centraliza o texto */
+    margin-top: 48px;
+  }
+
+  .txt h2 {
+    font-size: 18px; /* Reduz o tamanho da fonte */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    color: #0F172A;
+    max-width: 360px;
+  }
+
+  .txt p {
+    font-size: 18px; /* Reduz o tamanho da fonte */
+    color: #0F172A;
+  }
+
+  .txt span {
+    font-weight: bold; /* Destaca o texto */
+    color: #0F172A;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center;
+    margin-top: 700px;
+    width: 400px;
+    right: 0;
+  }
+
+}

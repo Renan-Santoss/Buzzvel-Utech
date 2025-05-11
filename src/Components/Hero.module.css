@@ -1,0 +1,216 @@
+.hero {
+  padding: 60px 40px;
+  background-color: #f9fafb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vec {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.vec img {
+  position: absolute;
+  margin-bottom: 45px;
+}
+
+.vec h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: #0f172a;
+  z-index: 1;
+}
+
+.textp {
+  margin: 0;
+}
+
+.textp p {
+  font-size: 24px;
+  color: #0f172a;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 32px;
+}
+
+.button button {
+  margin: 0;
+  width: 240px;
+  height: 64px;
+  background-color: #ea580c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button button:hover {
+  background-color: #f97316;
+  transform: scale(1.05);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.btn img {
+  width: 24px;
+  height: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #2563EB;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.btn a:hover {
+  color: #f97316;
+}
+
+.text {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.flexvec {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.flexvec img {
+  width: 40px;
+  height: 40px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsividade para telas menores ou iguais a 400px */
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 360px;
+  }
+
+  .container{
+    margin: 0;
+  }
+
+  .vec {
+    margin: 0;
+  }
+
+  .vec img {
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    margin-bottom: 15px;;
+  }
+
+  .vec h1 {
+    font-size: 40px;
+    text-align: left; /* Alinha o título à esquerda */
+    margin: 0;
+    z-index: 1;
+  }
+
+  .textp p {
+    font-size: 14px;
+    text-align: left; /* Alinha os parágrafos à esquerda */
+  }
+
+  .button {
+    display: flex; /* Organiza os botões em flex */
+    margin: 0;
+  }
+
+  .button button {
+    margin: 0;
+    font-size: 18px;
+    width: 153px;
+    height: 48px;
+  }
+
+  .button a {
+    color: #2563eb;
+    font-size: 16px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start; /* Alinha o botão "View Demo" à esquerda */
+  }
+
+  .text {
+    margin: 0;
+  }
+
+  .text br {
+    display: none; /* Remove a quebra de linha */
+  }
+
+  .text p {
+    text-align: left;
+    color: #475569;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .flexvec {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .flexvec img {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+

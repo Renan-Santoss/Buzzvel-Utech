@@ -1,0 +1,108 @@
+.hero {
+  margin-top: 90px;
+  background: #facc15;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 1900px;
+  padding: 90px 0;
+}
+
+.content img {
+  margin: 0;
+  width: 500px;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.wrap h1 {
+  font-size: 56px;
+  color: #0f172a;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+
+.wrap p {
+  font-size: 20px;
+  color: #0f172a;
+  padding: 10px;
+}
+
+.btn {
+  padding-top: 20px;
+}
+
+.button {
+  padding: 20px 34px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ea580c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #d14e0b; /* Cor mais escura no hover */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+@media (max-width: 400px) {
+  .hero {
+    margin-top: 50px; /* Reduz o espaçamento superior */
+    background: #facc15;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos */
+    width: 100%; /* Ajusta a largura para ocupar toda a tela */
+  }
+
+  .content img {
+    width: 360px; /* Reduz o tamanho das imagens */
+  }
+
+  .wrap {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0px; /* Adiciona espaçamento lateral */
+  }
+
+  .wrap h1 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+    font-weight: 700;
+    color: #0F172A;
+  }
+
+  .wrap p {
+    font-size: 14px; /* Reduz o tamanho da fonte do texto */
+  }
+
+
+  .button {
+    width: 185px;
+    height: 56px;
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+}

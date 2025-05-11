@@ -1,0 +1,198 @@
+.hero {
+  background-color: #0f172a;
+  height: 500px;
+}
+
+.container {
+  max-width: 1280px;
+  margin-top: 90px;
+}
+
+.content {
+  padding: 30px;
+}
+
+.wrap h2 {
+  margin-top: 30px;
+  font-size: 56px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.wrap img {
+  content: '';
+  position: absolute;
+  left: 610px;
+  margin-top: 45px;
+  z-index: -1;
+}
+
+.txt p {
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 32px 0;
+}
+
+.title a {
+  font-size: 20px;
+  color: #2563eb;
+  align-items: center;
+  margin: 0;
+}
+
+.title img {
+  margin-left: 20px;
+}
+
+.txtcollum {
+  flex-direction: column;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  margin: 18px 24px;
+  align-items: center;
+  transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+.btn button {
+  padding: 8px 20px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #2563eb;
+  background-color: transparent;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: #2563eb;
+  color: #fff;
+  box-shadow: 4px 4px 12px rgba(37, 99, 235, 0.5);
+  transform: scale(1.05);
+}
+
+.cardp {
+  background-color: #fff;
+  width: 232px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 20px #dbeafe;
+}
+
+.cardp h3 {
+  font-size: 14px;
+  margin: 18px 24px;
+  background-color: #dbeafe;
+  color: #1e40af;
+  width: 71px;
+  height: 24px;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 4px;
+  font-weight: 400;
+}
+
+.cardp h2 {
+  margin: 18px 24px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.cardp p {
+  margin: 18px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+}
+
+@media (max-width: 400px) {
+  .hero {
+    height: auto;
+    padding: 20px; 
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .content {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .wrap h2 {
+    font-size: 32px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .wrap img {
+    left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .txt p {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    max-width: 100%; /* Garante que o texto ocupe toda a largura */
+    margin-top: 10px;
+    text-align: left; /* Centraliza o texto */
+  }
+
+  .title a {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    text-align: center; /* Centraliza o link */
+  }
+
+  .flex {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos */
+    gap: 20px; /* Adiciona espaçamento entre os elementos */
+  }
+
+  .cardp {
+    height: auto; /* Ajusta a altura dinamicamente */
+    padding: 20px; /* Adiciona padding interno */
+    box-shadow: 1px 0px 10px #dbeafe; /* Reduz a sombra */;
+  }
+
+  .cardp h3 {
+    font-size: 12px; /* Reduz o tamanho da fonte */
+    text-align: center;
+  }
+
+  .cardp h2 {
+    font-size: 18px; /* Reduz o tamanho da fonte */
+    text-align: left; /* Centraliza o texto */;
+  }
+
+  .cardp p {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    text-align: left; /* Centraliza o texto */
+  }
+
+  .btn {
+    justify-content: center;
+    margin: 16px 0;
+  }
+
+  .btn button {
+    font-size: 14px; 
+    padding: 10px;
+    width: 100%; /* Faz o botão ocupar toda a largura */
+  }
+}

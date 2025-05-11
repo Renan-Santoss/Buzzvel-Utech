@@ -1,0 +1,131 @@
+.container {
+  margin-top: 32px;
+  max-width: 1280px;
+}
+
+.content {
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; 
+  max-width: 1280px; 
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  scroll-behavior: smooth; /* Suaviza a rolagem */
+  padding-bottom: 10px;
+}
+
+.card {
+  flex: 0 0 300px; /* Define a largura fixa dos cartões */
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user strong {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.user span {
+  font-size: 16px;
+  color: #475569;
+}
+
+.arrows {
+  display: flex;
+  margin: 0;
+}
+
+.arrow {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 50%; /* Adiciona bordas arredondadas */
+  background-color: transparent;
+  color: #475569; /* Cor padrão da seta */
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+.arrow:hover {
+  border-color: #ea580c; /* Altera a borda para laranja no hover */
+  color: #ea580c; /* Altera a cor da seta para laranja no hover */
+  background-color: #fff; /* Mantém o fundo branco */
+}
+
+@media (max-width: 400px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .title h1 {
+    font-size: 24px;
+    margin: 0 auto;
+  }
+
+  .arrows button{
+    display: none;
+  }
+
+  .arrows {
+    display: flex;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+  }
+
+  .card {
+    flex: 0 0 250px; /* Ajusta a largura dos cartões no mobile */
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  .card p {
+    font-size: 16px; /* Reduz o tamanho da fonte do texto */
+  }
+
+  .user img {
+    width: 40px; /* Reduz o tamanho da imagem do usuário */
+    height: 40px;
+  }
+
+  .user strong {
+    font-size: 16px; /* Reduz o tamanho da fonte do nome */
+  }
+
+  .user span {
+    font-size: 14px; /* Reduz o tamanho da fonte do cargo */
+  }
+}

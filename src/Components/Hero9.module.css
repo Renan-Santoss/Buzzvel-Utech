@@ -1,0 +1,157 @@
+.hero {
+  background-color: #ea580c; /* Cor de fundo laranja */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f3f4f6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f3f4f6;
+  text-align: left;
+  width: 100%; /* Garante que o label ocupe toda a largura do grupo */
+}
+
+input,
+textarea {
+  width: 550px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ea580c;
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.3);
+}
+
+.button {
+  background-color: #000;
+  color: white;
+  width: 260px;
+  height: 64px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+@media (max-width: 400px) {
+  .hero {
+    background-color: #ea580c; /* Cor de fundo laranja */
+    padding: 20px; /* Adiciona padding para o mobile */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto; 
+  }
+
+  h1 {
+    font-size: 24px; 
+    color: #fff;
+    margin-bottom: 10px;
+    max-width: 280px;
+  }
+
+  p {
+    font-size: 14px; 
+    color: #fff; 
+    margin-bottom: 20px; 
+    max-width: 280px; 
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos do formulário */
+    gap: 15px; /* Espaçamento entre os campos */
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column; /* Empilha o label e o input */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  .formGroup label {
+    font-size: 14px; /* Reduz o tamanho da fonte do label */
+    color: #fff; /* Cor branca para o label */
+    margin-bottom: 5px; /* Espaçamento inferior */
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    width: 360px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+  }
+
+  .formGroup textarea {
+    resize: none; /* Remove a opção de redimensionar o textarea */
+    height: 100px; /* Define uma altura fixa */
+  }
+
+  .button {
+    background-color: #1e293b; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove as bordas padrão */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    padding: 15px; /* Adiciona padding interno */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    font-weight: 500; /* Deixa o texto em negrito */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+    transition: all 0.3s ease; /* Suaviza a transição */
+  }
+
+  .button:hover {
+    background-color: #0f172a; /* Escurece o botão no hover */
+  }
+}

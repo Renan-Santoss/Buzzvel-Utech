@@ -1,0 +1,65 @@
+.hero {
+  background-color: #0f172a;
+  color: #facc15;
+  height: 250px;
+  place-items: center;
+  margin-top: 60px;
+}
+
+.container {
+  background-color: #0f172a;
+  height: 250px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.wrap h2 {
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.wrap h3{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Responsividade para telas menores ou iguais a 400px */
+@media (max-width: 400px) {
+  .hero {
+    height: 640px;
+    padding: 20px 0; /* Adiciona padding superior e inferior */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos no mobile */
+    align-items: center; /* Centraliza os elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 0 16px; /* Adiciona padding lateral */
+  }
+
+  .wrap {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column; /* Empilha os itens dentro de cada bloco */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .wrap h2 {
+    font-size: 48px; /* Reduz o tamanho da fonte */
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .wrap h3 {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    color: #FACC15;
+    margin: 0;
+  }
+}
