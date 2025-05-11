@@ -86,7 +86,7 @@
 
 .btn a {
   text-decoration: none;
-  color: #2563EB;
+  color: #2563eb;
   font-size: 24px;
   transition: color 0.3s ease;
 }
@@ -96,8 +96,16 @@
 }
 
 .text {
+  display: flex;
   font-size: 16px;
-  color: #4b5563;
+  margin: 0;
+  align-items: center;
+}
+
+.text p {
+  color: #475569;
+  margin: 0;
+  font-size: 18px;
 }
 
 .flexvec {
@@ -124,7 +132,7 @@
     max-width: 360px;
   }
 
-  .container{
+  .container {
     margin: 0;
   }
 
@@ -136,7 +144,7 @@
     position: absolute;
     width: 115px;
     height: 40px;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
   }
 
   .vec h1 {
@@ -213,4 +221,3 @@
     height: auto;
   }
 }
-

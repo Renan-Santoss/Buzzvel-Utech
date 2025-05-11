@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
+import Header from './Components/Header.jsx';
 import Hero from './Components/Hero';
 import Hero2 from './Components/Hero2';
 import Hero3 from './Components/Hero3';
@@ -15,17 +15,17 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <div>
-        <Header />  
-        <Hero />
-        <Hero2 />
-        <Hero3 />
-        <Hero4 />
-        <Hero5 />
-        <Hero6 />
-        <Hero7 />
-        <Hero8 />
-        <Hero9 />
-        <Footer />
+      <Header />
+      <Hero />
+      <Hero2 />
+      <Hero3 />
+      <Hero4 />
+      <Hero5 />
+      <Hero6 />
+      <Hero7 />
+      <Hero8 />
+      <Hero9 />
+      <Footer />
     </div>
   );
 }
